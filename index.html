@@ -22,11 +22,28 @@
         <span>Lớn xinh như hoa</span><br>
         <span>Ngày càng đảm đang</span><br>
         <span>Chúc 20/10</span><br>
-        <a href="https://www.facebook.com/profile.php?id=100042671705049" target="_blank">
-          <button class="btn-gift">Tặng quà</button>
-        </a>
+        
+          <button onclick=btnGift() class="btn-gift">Tặng quà</button>
+          <div id="gift" class="row" style="display: none">
+            <div class="col-12 mt-5 d-flex justify-content-center">
+              <div class="box">
+                <div class="box-body">
+                  <img class="img" src="./loai-hoa-dep-nhat-the-gioi-26950.jpg">
+                  <div class="box-lid">
+                    <div class="box-bowtie"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
       </div>
     </div>
   </body>
- 
+    <script>
+      function btnGift()
+      {
+        document.getElementById("gift").style.display = "block"
+        btnGift();
+      }
+    </script>
 </html>
